@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<!-- Claire Chan - D101 -->
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <title>P01 - Web Style Guide</title>
+  <link href="css/main.css" rel="stylesheet">
+  <!--Grid styling-->
+  <link href="css/grid.css" rel="stylesheet">
+  <!--Font for logo-->
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
+  <!--Titillium Web fonts-->
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+  <h1>P01 - Web Style Guide</h1>
+
+  <nav>
+    <div class = "grid-row">
+
+      <div class = "grid-col-2of10">
+        <a class = "guide-nav" href="#interactive_elements">Interactive Elements</a>
+      </div>
+
+      <div class = "grid-col-2of10">
+        <a class = "guide-nav" href="#text_elements">Text Elements</a>
+      </div>
+
+      <div class = "grid-col-2of10">
+        <a class = "guide-nav" href="#combined_elements">Combined Elements</a>
+      </div>
+    </div>
+
+    <div class = "grid-row">
+
+      <div class = "grid-col-2of10">
+        <a class = "guide-nav" href="http://www.sfu.ca/~cca218/P01_Process/P01Final/User_flow.html">User-flows</a>
+      </div>
+
+      <div class = "grid-col-2of10">
+        <a class = "guide-nav" href="http://www.sfu.ca/~cca218/P01_Process/P01Final/Citations.html">Citations</a>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- INTERACTIVE ELEMENTS SECTION // -->
+  <section id="interactive_elements">
+
+    <!-- Navigation button styling section -->
+    <section>
+
+      <h2>Navigation button</h2>
+
+      <h3>CSS selector:</h3>
+      <p>.default-button</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;a href="#" class= "default-button"&gt;Navigation Button&lt;/a&gt;</code>
+
+      <h3>Rendered element:</h3>
+      <a class="default-button" href="#">Button</a>
+
+    </section>
+
+    <!-- in-text link section -->
+    <section>
+      <h2>In-text link</h2>
+
+      <h3>CSS selector:</h3>
+
+      <p>.in_text_link:hover,.in_text_link:focus</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;p&gt;The&lt;a class = "in_text_link" href="#"&gt;in-text link&lt;/a&gt;will appear while users read policies, terms or product description.&gt;&lt;/p&gt;</code>
+
+      <h3>Rendered element:</h3>
+
+      <p>The <a class = "in_text_link" href="#">in-text link </a>will appear while users read policies, terms or product description.</p>
+
+    </section>
+
+    <!-- Submit/Reset Buttons -->
+    <section>
+      <h2>Submit/Reset Buttons</h2>
+
+      <h3>CSS selector:</h3>
+      <p>.button-submit, .button-submit:hover, .button-submit:focus</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;a href="#" class="button"&gt;Submit&lt;/a&gt;</code>
+
+      <h3>Rendered element:</h3>
+      <a class="button-submit" href="#">Submit</a>
+    </section>
+
+    <!-- TextInput field -->
+    <section>
+      <h2> TextInput Field</h2>
+
+      <h3>CSS selector:</h3>
+      <p>.input-wrapper and input[type=text]</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;div class="input-wrapper"&gt;&lt;label for="form-firstname"&gt;FIRST NAME:&lt;/label&gt;&lt;input type="text" id="form-firstname" placeholder=""&gt;&lt;/div&gt;
+      </code>
+      <code>&lt;div class="input-wrapper"&gt;&lt;label for="form-lastname"&gt;LAST NAME:&lt;/label&gt;&lt;input type="text" id="form-lastname" placeholder=""&gt;&lt;/div&gt;
+      </code>
+      <code>&lt;div class="input-wrapper"&gt;&lt;label for="form-address"&gt;ADDRESS:&lt;/label&gt;&lt;input type="text" id="form-adress" placeholder=""&gt;&lt;/div&gt;
+      </code>
+      <code>&lt;div class="input-wrapper"&gt;&lt;label for="form-phone"&gt;PHONE:&lt;/label&gt;&lt;input type="text" id="form-phone" placeholder=""&gt;&lt;/div&gt;
+      </code>
+
+      <section id="comments">
+
+        <p>Step 1: Fill in personal information</p>
+
+        <form method="post" action="#">
+
+          <div class="input-wrapper">
+            <label for="form-firstname">FIRST NAME:</label>
+            <input type="text" id="form-firstname" placeholder="">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="form-lastname">LAST NAME:</label>
+            <input type="text" id="form-lastname" placeholder="">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="form-address">ADDRESS:</label>
+            <input type="text" id="form-address" placeholder="">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="form-phone">PHONE:</label>
+            <input type="text" id="form-phone" placeholder="">
+          </div> 
+          
+        </form>
+
+      </section>
+
+    </section>
+
+  </section>
+
+
+  <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+  <!-- TEXT ELEMENTS SECTION // -->
+  <section id="text_elements">
+
+    <section>
+
+      <h2>Headings</h2>
+      <h3>CSS selector:</h3>
+      <p>section h2, section h3, section h4 and .font-use</p>
+
+      <h3>Sample code:</h3>
+      <code> &lt;h2 class = "Header1" &gt; Header Level1 &lt; /h2 &gt;</code>
+      <code> &lt;h2 class = "font-use" &gt; Titillium Web  Semi-Bold 600&lt; /h2 &gt;</code>
+      <code> &lt;h3 class = "Header2" &gt; Header Level2&lt; /h3 &gt;</code>
+      <code> &lt;h3 class = "font-use" &gt; Titillium Web  Normal 400&lt; /h3 &gt;</code>
+      <code> &lt;h4 class = "Header3" &gt; Header Level3 &lt; /h4 &gt;</code>
+      <code> &lt;h4 class = "font-use" &gt; Titillium Web  Light 300&lt; /h4 &gt;</code>
+
+      <h3>Rendered element:</h3>
+
+      <h2 class = "header1">Header Level1</h2>
+      <h2 class = "font-use">Titillium Web Semi-Bold 600</h2>
+
+      <h3 class = "header2">Header Level2</h3>
+      <h3 class = "font-use">Titillium Web Normal 400</h3>
+
+      <h4 class = "header3">Header Level3</h4>
+      <h4 class = "font-use">Titillium Web Light 300</h4>
+
+    </section>
+
+    <section>
+      <h2>Paragraphs</h2>
+
+      <h3>CSS selector:</h3>
+      <p>section p</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;a href="#" class="default button"&gt;Navigation Button&lt;/a&gt;</code>
+
+      <h3>Rendered element:</h3>
+      <p>Delight house is a company aim to create nice, warm house environment by selling small, unique house decorations. We hope each customer could find their favourite items in our store, which makes delight your place and also bring you good mood.</p>
+
+    </section>
+
+
+    <section>
+
+      <h2>Bulleted Lists</h2>
+
+      <h3>CSS selector:</h3>
+      <p>.product_info</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;ul class="product_info"&gt; </code>
+      <code>&lt;li&gt;&lt;Canvas printed pictures&gt;&lt;/li&gt; </code>
+      <code>&lt;li&gt;&lt;Height: 80cm&gt;&lt;/li&gt; </code>
+      <code>&lt;li&gt;&lt;Width: 60cm&gt;&lt;/li&gt; </code>
+      <code>&lt;/ul&gt;</code>
+
+      <h3>Rendered element:</h3>
+
+      <p>Product Code: 301232</p>
+
+        <ul class = "product_info">
+          <li>Canvas printed pictures</li>
+          <li>Height: 80cm</li>
+          <li>Width: 60cm</li>
+        </ul>  
+
+    </section>
+
+    <section>
+
+      <h2>Numbered Lists</h2>
+
+      <h3>CSS selector:</h3>
+
+      <p>.delivery</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;ol class="Delivery"&gt; </code>
+      <code>&lt;li&gt;&lt;Security Checks&gt;&lt;/li&gt; </code>
+      <code>&lt;li&gt;&lt;Taxes and Duties&gt;&lt;/li&gt; </code>
+      <code>&lt;li&gt;&lt;Shipping Fees&gt;&lt;/li&gt; </code>
+      <code>&lt;li&gt;&lt;Warranties&gt;&lt;/li&gt; </code>
+      <code>&lt;/ol&gt;</code>
+
+      <h3>Rendered element:</h3>
+      <p>International delivery</p>
+
+        <ol class = "delivery">
+          <li>Security Checks</li>
+          <li>Taxes and Duties</li>
+          <li>Shipping Fees</li>
+          <li>Warranties</li>
+        </ol>
+        
+    </section>
+
+  </section>
+  <!-- // TEXT ELEMENTS SECTION -->
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+
+  <section id="combined_elements">
+
+    <!--Product listing-->
+    <section>
+
+      <h2>Product Listing</h2>
+
+      <h3>CSS selector:</h3>
+      <p>.product-name, .product-price</p>
+
+      <h3>Sample code:</h3>
+
+      <code>&lt;nav&gt;</code>
+      <code>&lt;figure&gt;&lt;img src="img/clock.jpg" height="256" width="256" alt="clock"&gt;&lt;/figure&gt;</code>
+      <code>&lt;a href = "#" class = "product-name"&gt;Streets Clock Acrylic Yellow&lt;/a&gt;
+      </code>
+      <code>&lt;p class = "product-price" &gt;CAD29.99&lt;/p&gt;</code>
+      <code>&lt;figure class = "rating"&gt;&lt;img src="img/rating.png" height="22" width="64" alt="rating"&gt;&lt;/figure&gt;</code>
+      <code>&lt;/nav&gt;</code>
+
+      <h3>Rendered element:</h3>
+
+        <nav>
+
+          <figure>
+            <img src="img/clock.jpg" height="256" width="256" alt="clock">
+          </figure>
+
+          <a href = "#" class = "product-name">Streets Clock Acrylic Yellow</a>
+          <p class = "product-price">CAD29.99</p>
+
+          <figure class = "rating">
+            <img src="img/rating.png" height="22" width="64" alt="rating">
+          </figure>
+
+        </nav>
+
+    </section>
+
+      <!--Main navigation-->
+    <section>
+
+      <h2>Main Navigation</h2>
+
+      <h3>CSS selector:</h3>
+
+      <p>grid.css- .grid_row, .grid-col-1of3, .grid-col-2of3, .grid-col2of10,@media(min-width:47em),
+          @media(min-width: 36em)</p>
+      <p>main.css- .button-nav, .button-nav:hover, .button-nav:focus, #search_wrapper, #headerSearch,input[type=text]</p>
+
+      <h3>Sample code:</h3>
+
+      <code>&lt;nav class = "grid_row"&gt;</code>
+      <code>&lt;div class = "grid-col-1of3"&gt;</code>
+      <code>&lt;h1 class = "logo"&gt;Delight house&lt;/h1&gt;</code>
+      <code>&lt;/div&gt;</code>
+
+      <code>&lt;div class = "grid-col-2of3"&gt;</code>
+      <code>&lt;div class = "grid-col-2of10"&gt;</code>
+      <code>&lt;a class="button-nav" href="#"&gt;SHOP&lt;/a&gt;</code>
+      <code>&lt;/div&gt;</code>
+
+      <code>&lt;div class = "grid-col-2of10"&gt;</code>
+      <code>&lt;a class="button-nav" href="#"&gt;ABOUT&lt;/a&gt;</code>
+      <code>&lt;/div&gt;</code>
+
+      <code>&lt;div class = "grid-col-2of10"&gt;</code>
+      <code>&lt;a class="button-nav" href="#"&gt;HELPS&lt;/a&gt;</code>
+      <code>&lt;/div&gt;</code>
+
+      <code>&lt;div class = "grid-col-2of10"&gt;</code>
+      <code>&lt;a class="button-nav" href="#"&gt;EVENTS&lt;/a&gt;</code>
+      <code>&lt;/div&gt;</code>
+
+      <code>&lt;div class = "grid-col-2of10"&gt;</code>
+      <code>&lt;div id = "search_wrapper"&gt;&lt;img src="img/search_icon.png" height="20" width="25" alt="search"&gt;&lt;input type="text"  id = "headerSearch" value="Search"&gt;</code>
+      <code>&lt;/div&gt;</code>
+      <code>&lt;/div&gt;</code>
+      <code>&lt;/nav&gt;</code>
+
+      <h3>Rendered element:</h3>
+
+
+        <!--navigation example-->
+        <nav class = "grid_row">
+
+            <div class = "grid-col-1of3">
+              <h1 class= "logo">Delight house</h1>
+            </div>
+
+          <div class = "grid-col-2of3">
+
+            <div class = "grid-col-2of10">
+              <a class="button-nav" href="#">SHOP</a>
+            </div>
+
+            <div class = "grid-col-2of10">
+              <a class="button-nav" href="#">ABOUT</a>
+            </div>
+
+            <div class ="grid-col-2of10">
+              <a class="button-nav" href="#">HELPS</a>
+            </div>
+
+            <div class = "grid-col-2of10">
+              <a class="button-nav" href="#">EVENTS</a>
+            </div>
+
+            <div class = "grid-col-2of10">
+              <div id = "search_wrapper">
+                <img src="img/search_icon.png" height="20" width="25" alt="search">
+                <input type="text"  id = "headerSearch" value="Search">
+              </div>
+            </div>
+
+          </div>
+
+        </nav>
+
+      </section>
+
+      <!--Grid Size-->
+      <section>
+        <h2>Grid Systems</h2>
+        <h3>Grid Size</h3>
+
+        <h3>CSS selector:</h3>
+
+        <h4>grid.css-.grid-col-2of10,.grid-col-2of3,.grid-col-1of3,.grid-col-3of10,.grid-col-1of4,.grid-col-3of4,.grid-col-1of8,.grid-col-5of10,.grid-col-10of10, .grid-col-7of10</h4>
+
+        <h4>main.css-.grid_box</h4>
+
+        <h3>Sample code:</h3>
+        <code>&lt;div class = "grid-row"&gt;</code>
+        <code>&lt;div class="grid-col-10of10&gt;</code>
+        <code>&lt;p class = "grid_box">1/1&lt;/p&gt;&lt;/div&gt;</code>
+        <code>&lt;/div&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <!--Grid size 1of1-->
+          <div class = "grid-row">
+
+            <div class="grid-col-10of10">
+              <p class = "grid_box">1/1</p>
+            </div>
+
+            <!--Grid size 1of2-->
+            <div class="grid-col-5of10">
+              <p class = "grid_box">1/2</p>
+            </div>
+
+            <div class="grid-col-5of10">
+              <p class = "grid_box">1/2</p>
+            </div>
+
+            <!--Grid size 1of3-->
+            <div class="grid-col-3of10">
+              <p class = "grid_box">1/3</p>
+            </div>
+
+            <div class="grid-col-3of10">
+              <p class = "grid_box">1/3</p>
+            </div>
+
+            <div class="grid-col-3of10">
+              <p class = "grid_box">1/3</p>
+            </div>
+
+            <!--Grid size 1of4-->
+            <div class="grid-col-1of4">
+              <p class = "grid_box">1/4</p>
+            </div>
+
+            <div class="grid-col-1of4">
+              <p class = "grid_box">1/4</p>
+            </div>
+
+            <div class="grid-col-1of4">
+              <p class = "grid_box">1/4</p>
+            </div>
+
+            <div class="grid-col-1of4">
+              <p class = "grid_box">1/4</p>
+            </div>
+
+            <!--Grid size 1of8-->
+            <div class="grid-col-1of8">
+              <p class = "grid_box">1/8</p>
+            </div>
+
+            <div class="grid-col-1of8">
+              <p class = "grid_box">1/8</p>
+            </div>
+
+            <div class="grid-col-1of8">
+              <p class = "grid_box">1/8</p>
+            </div>
+
+            <div class="grid-col-1of8">
+              <p class = "grid_box">1/8</p>
+            </div>
+
+            <div class="grid-col-1of8">
+              <p class = "grid_box">1/8</p>
+            </div>
+
+            <div class="grid-col-1of8">
+              <p class = "grid_box">1/8</p>
+            </div>
+
+            <div class="grid-col-1of8">
+              <p class = "grid_box">1/8</p>
+            </div>
+
+            <div class="grid-col-1of8">
+              <p class = "grid_box">1/8</p>
+            </div>
+
+          </div>
+
+        </section>
+
+        <section>
+          <h3>Mixed Grid</h3>
+
+          <h3>CSS selector:</h3>
+          <h4>grid.css-.grid-col-3of10,.grid-col-1of4,.grid-col-3of4,.grid-col-7of10</h4>
+          <h4>main.css-.grid_box</h4>
+
+          <h3>Sample code:</h3>
+          <code>&lt;div class = "grid-row"&gt;</code>
+          <code>&lt;div class="grid-col-3of10&gt;</code>
+          <code>&lt;p class = "grid_box">1/3&lt;/p&gt;&lt;/div&gt;</code>
+          <code>&lt;/div&gt;</code>
+
+          <h3>Rendered element:</h3>
+
+          <div class = "grid-row">
+            <!--navigation grid(external): 1/3 for logo, 2/3 for navigation bar-->
+            <div class = "grid-col-3of10">
+              <p class = "grid_box">1/3</p>
+            </div>
+
+            <div class = "grid-col-7of10">
+              <p class = "grid_box">2/3</p>
+            </div>
+
+             <!--navigation grid(inside): Another grid for navigation elements-->
+            <div class = "grid-col-1of4">
+              <p class = "grid_box">1/4</p>
+            </div>
+
+            <div class = "grid-col-3of4">
+              <p class = "grid_box">3/4</p>
+            </div>
+
+          </div>
+
+        </section>
+
+
+
+        <!--Grid paragraph-->
+        <section>
+          <h2>Grid paragraph example</h2>
+
+          <h3>CSS selector:</h3>
+          <h4>grid.css-.grid-col-3of4,.grid-col-1of4</h4>
+          <h4>main.css-.grid_para1, .grid_para2,.para_header</h4>
+
+          <h3>Sample code:</h3>
+          <code>&lt;div class = "grid-row"&gt;</code>
+          <code>&lt;div class="grid-col-3of4&gt;</code>
+          <code>&lt;p class = "para_header"> Paragraph with 3/4 grid&lt;/p&gt;</code>
+          <code>&lt;p class = "grid_para1"&gt;&lt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tellus ex, condimentum sed vestibulum et, ultricies at sem. Maecenas vulputate faucibus leo, id commodo mi cursus sed. Proin auctor ante suscipit mollis placerat. Donec mattis ut quam ut tincidunt. Praesent massa tellus, pellentesque a placerat eget, mattis sit amet ante. Maecenas porttitor urna sed sapien congue, eu gravida nisi suscipit.&gt;&lt;/p&gt;</code>
+          <code>&lt;/div&gt;</code>
+          <code>&lt;/div&gt;</code>
+
+          <h3>Rendered element:</h3>
+
+          <div class = "grid-row">
+
+            <div class="grid-col-3of4">
+              <p class ="para_header"> Paragraph with 3/4 grid</p>
+              <p class = "grid_para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tellus ex, condimentum sed vestibulum et, ultricies at sem. Maecenas vulputate faucibus leo, id commodo mi cursus sed. Proin auctor ante suscipit mollis placerat. Donec mattis ut quam ut tincidunt. Praesent massa tellus, pellentesque a placerat eget, mattis sit amet ante. Maecenas porttitor urna sed sapien congue, eu gravida nisi suscipit.</p>
+
+            </div>
+
+            <div class="grid-col-1of4">
+              <p class ="para_header"> Paragraph with 3/4 grid</p>
+              <p class = "grid_para2">Paragraph with 3/4 grid. Lorem ipsum dolor sit amet, consectetur adipiscing elit.adipiscing elit.attis sit amet ante. </p>
+            </div>
+
+          </div>
+
+        </section>
+
+      </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+  </body>
+</html>
